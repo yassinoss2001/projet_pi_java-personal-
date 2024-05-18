@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="343.0" prefWidth="301.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CardMenuController">
+    <children>
+        <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="275.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="14.0" layoutY="166.0" text="nom" />
+        <Label layoutX="14.0" layoutY="192.0" text="prix">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <Button layoutX="246.0" layoutY="303.0" mnemonicParsing="false" style="-fx-background-color: green;" text="ADD" textFill="WHITE" />
+        <Label fx:id="lnom" layoutX="66.0" layoutY="168.0" text="Label" />
+        <Label fx:id="lprix" layoutX="66.0" layoutY="193.0" text="Label" />
+      <Label layoutX="12.0" layoutY="226.0" text="calories" />
+      <Label fx:id="lcalories" layoutX="66.0" layoutY="226.0" text="Label" />
+      <Label layoutX="12.0" layoutY="264.0" text="description" />
+      <Label fx:id="ldescription" layoutX="94.0" layoutY="264.0" text="Label" />
+    </children>
+</AnchorPane>

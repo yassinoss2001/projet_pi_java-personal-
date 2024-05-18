@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="828.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuCardList">
+
+    <ImageView fitHeight="828.0" fitWidth="976.0" layoutX="260.0" opacity="0.7">
+        <image>
+            <Image url="@image/img.png" />
+        </image>
+    </ImageView>
+
+    <AnchorPane prefHeight="828.0" prefWidth="220.0" style="-fx-background-color: rgba(194,26,26,0.87)">
+        <children>
+            <ImageView fitHeight="186.0" fitWidth="197.0" layoutX="17.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../../../../../xampp/htdocs/img/yammi.jpg" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="37.0" layoutY="281.0">
+
+            </ImageView>
+         <Button layoutX="31.0" layoutY="302.0" mnemonicParsing="false" onAction="#versListeSupplements" prefHeight="38.0" prefWidth="158.0" style="-fx-background-color: grey;" text="Liste des supplements" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </Button>
+         <Button layoutX="30.0" layoutY="361.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="158.0" style="-fx-background-color: grey;" text="Listes des menus" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </Button>
+        </children>
+    </AnchorPane>
+
+    <Label layoutX="618.0" layoutY="73.0" prefHeight="56.0" prefWidth="421.0" text="Vos Menus" textFill="#a40000">
+        <font>
+            <Font name="System Bold Italic" size="39.0" />
+        </font>
+    </Label>
+    <HBox layoutX="618.0" layoutY="205.0" spacing="10.0" />
+    <ScrollPane layoutX="254.0" layoutY="171.0" prefHeight="570.0" prefWidth="949.0" style="-fx-border-color: red;">
+        <content>
+            <GridPane fx:id="grid" prefHeight="210.0" prefWidth="185.0">
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                </rowConstraints>
+            </GridPane>
+        </content>
+    </ScrollPane>
+
+</AnchorPane>
